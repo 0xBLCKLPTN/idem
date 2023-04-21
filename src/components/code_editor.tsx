@@ -1,7 +1,16 @@
-import { Textarea } from "@chakra-ui/react";
+import { Textarea, Text} from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
+
 
 export default function CodeEditor() {
+    const filename = 'main.cpp';
+    const filedata = '#include <iostream>';
+
     return (
-        <Textarea h='calc(100vh)'/>
+        <VStack w='100%'>
+            <Text>{filename}</Text>
+            <Textarea h='calc(90vh)'/>
+        </VStack>
+        
     );
 }
