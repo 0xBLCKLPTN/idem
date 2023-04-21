@@ -1,11 +1,15 @@
 import React from 'react';
+import { VStack, HStack, Button} from '@chakra-ui/react';
 
+import Explorer from './components/explorer/explorer';
+import CodeEditor from './components/code_editor';
 
 function App() {
   return (
-    <div className="App">
-      <h1>qweqwe</h1>
-    </div>
+    <HStack backgroundColor='grey'>
+      <Explorer />
+      <CodeEditor />
+    </HStack>
   );
 }
 
